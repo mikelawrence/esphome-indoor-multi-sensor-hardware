@@ -1,0 +1,248 @@
+(footprint "TVS_ESDA25P35-1U1M"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.632 -1.3064 0)
+		(layer "F.SilkS")
+		(uuid "693d34a7-e93d-4c41-9bad-3aeb386e43f4")
+		(effects
+			(font
+				(size 0.64 0.64)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TVS_ESDA25P35-1U1M"
+		(at 5.9152 1.3064 0)
+		(layer "F.Fab")
+		(uuid "ed1e4eff-f2d7-455d-adf1-333975a0fca7")
+		(effects
+			(font
+				(size 0.64 0.64)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a1e1d3f3-b176-43ce-ad0f-9cbd2d9deb44")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2c810242-c7ff-4b61-8ece-a18fe0369dde")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "13236e6c-a6bb-42eb-a68d-356299cf354f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_poly
+		(pts
+			(xy -0.885 -0.38) (xy -0.365 -0.38) (xy -0.365 0.38) (xy -0.885 0.38)
+		)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Paste")
+		(uuid "2c3d8540-a74a-44ed-af75-1b9840ccb37f")
+	)
+	(fp_poly
+		(pts
+			(xy 0.365 -0.38) (xy 0.885 -0.38) (xy 0.885 0.38) (xy 0.365 0.38)
+		)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Paste")
+		(uuid "6286a569-15fc-4542-945c-6b6ab3eaeb6f")
+	)
+	(fp_line
+		(start -0.8 -0.72)
+		(end 0.8 -0.72)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "49143124-618b-413d-93ae-54340cd8872d")
+	)
+	(fp_line
+		(start -0.8 0.72)
+		(end 0.8 0.72)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0bd9691d-2725-4c23-97ea-4e71517562d1")
+	)
+	(fp_circle
+		(center -1.5 0)
+		(end -1.4 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "6aa4c8d7-f1ad-4217-9bb7-8a077376fa5d")
+	)
+	(fp_line
+		(start -1.15 -0.7835)
+		(end -1.15 0.7835)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e8ecf0c0-c5eb-4768-92dc-c7298caaf08f")
+	)
+	(fp_line
+		(start -1.15 0.7835)
+		(end 1.15 0.7835)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0192df28-6db4-4013-ad99-24a452e32640")
+	)
+	(fp_line
+		(start 1.15 -0.7835)
+		(end -1.15 -0.7835)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "eabb12d6-fb97-406f-bb88-523bb0e2ae16")
+	)
+	(fp_line
+		(start 1.15 0.7835)
+		(end 1.15 -0.7835)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bcc01bc3-7210-4ba7-b4d2-a806665fce1b")
+	)
+	(fp_line
+		(start -0.8 -0.5)
+		(end 0.8 -0.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "082b50a0-1043-471f-b40a-00d8f06bb0f4")
+	)
+	(fp_line
+		(start -0.8 0.5)
+		(end -0.8 -0.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0e012097-4ae9-43da-922b-d1ff995a44c5")
+	)
+	(fp_line
+		(start 0.8 -0.5)
+		(end 0.8 0.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "65e08e69-945d-4e5c-8d94-1d1cafb766cb")
+	)
+	(fp_line
+		(start 0.8 0.5)
+		(end -0.8 0.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1aae8fdd-dc77-4878-80da-51ae51eb7b5c")
+	)
+	(fp_circle
+		(center -1.5 0)
+		(end -1.4 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "3454b57b-3671-4873-8845-cfb7853e486a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "10f9f407-59a6-480b-be50-b59031322740")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "A" smd rect
+		(at 0.625 0)
+		(size 0.55 0.8)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "83a40fab-2f34-4b13-be91-3e49ff070b7b")
+	)
+	(pad "C" smd rect
+		(at -0.625 0)
+		(size 0.55 0.8)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "cd8937c7-e3a0-46a9-baf9-376781f97b54")
+	)
+	(model "${KIPRJMOD}/libraries/ESDA25P35-1U1M/ESDA25P35-1U1M.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)
