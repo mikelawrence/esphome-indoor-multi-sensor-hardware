@@ -82,5 +82,5 @@ I'm not using USB-C Power Delivery but I am expecting 5V @ 3A which is readily a
 
 More information is in the enclosure [README](enclosure/README.md) file.
 
-## Operation
-Expect an ESPHome YAML configuration soon.
+## Configuration
+Click [here](https://mikelawrence.github.io/esphome-indoor-multi-sensor-config/) to go to the installation and configuration site.
