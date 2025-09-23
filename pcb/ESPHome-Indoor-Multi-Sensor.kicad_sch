@@ -2932,7 +2932,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 81.28) (xy 140.97 63.5)
+			(xy 140.97 31.75) (xy 140.97 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2992,7 +2992,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 55.88) (xy 128.27 31.75)
+			(xy 128.27 31.75) (xy 128.27 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3242,16 +3242,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 55.88) (xy 140.97 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4931a571-edd0-451b-9dda-593e5b9bddc8")
-	)
-	(wire
-		(pts
 			(xy 76.2 49.53) (xy 87.63 49.53)
 		)
 		(stroke
@@ -3389,16 +3379,6 @@
 			(type default)
 		)
 		(uuid "7d47dd78-d92a-4fea-a74e-a2584481131c")
-	)
-	(wire
-		(pts
-			(xy 128.27 78.74) (xy 128.27 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d72732f-9689-4529-a67c-e5b9c9a9d50d")
 	)
 	(wire
 		(pts
@@ -4352,93 +4332,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 128.27 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "17768368-0869-41f3-b49a-5f5245c3740d")
-		(property "Reference" "R10"
-			(at 129.54 58.674 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10Ω"
-			(at 129.54 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 126.492 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 128.27 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, 10Ω, 62.5mW, 1%, 0402"
-			(at 128.27 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay / Dale"
-			(at 128.27 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "CRCW040210R0FKEE"
-			(at 128.27 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b562bcc7-efd6-4f68-8ff2-83dcee40f3f6")
-		)
-		(pin "2"
-			(uuid "a8871454-857b-460a-a719-c26a67c2ea44")
-		)
-		(instances
-			(project "ESPHome-Indoor-Multi-Sensor"
-				(path "/e74956a0-c576-42e7-be96-7ce5c3135988"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 93.98 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4584,94 +4477,6 @@
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 140.97 59.69 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1dcc6ed2-9e4c-4013-a22d-2060a2fb5c5b")
-		(property "Reference" "R8"
-			(at 139.7 58.674 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10Ω"
-			(at 139.7 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 142.748 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, 10Ω, 62.5mW, 1%, 0402"
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay / Dale"
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "CRCW040210R0FKEE"
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "191d75f5-db7e-46a7-9d93-96b5b512c071")
-		)
-		(pin "2"
-			(uuid "3c0df39d-8a3c-4d8c-a861-5adfb292af6d")
-		)
-		(instances
-			(project "ESPHome-Indoor-Multi-Sensor"
-				(path "/e74956a0-c576-42e7-be96-7ce5c3135988"
-					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -5946,7 +5751,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 134.62 29.972 90)
 			(effects
 				(font
