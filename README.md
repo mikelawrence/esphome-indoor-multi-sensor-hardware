@@ -77,7 +77,7 @@ I'm not using USB-C Power Delivery but I am expecting 5V @ 3A which is readily a
 
 ## Enclosure
 <p align="center">
-  <a href="enclosure/README.md"><img src="enclosure/meta/ESPHome-Multi-Sensor-Enclosure-Render.png" width="70%"></a>
+  <a href="enclosure/README.md"><img src="enclosure/meta/ESPHome-Indoor-Multi-Sensor-Enclosure-Render.png" width="70%"></a>
 </p>
 
 More information is in the enclosure [README](enclosure/README.md) file.
