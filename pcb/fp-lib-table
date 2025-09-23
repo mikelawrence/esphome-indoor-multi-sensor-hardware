@@ -12,4 +12,5 @@
   (lib (name "TLV75533PDRVR")(type "KiCad")(uri "${KIPRJMOD}/libraries/TLV75533PDRVR")(options "")(descr ""))
   (lib (name "TLV62568DRLT")(type "KiCad")(uri "${KIPRJMOD}/libraries/TLV62568DRLT")(options "")(descr ""))
   (lib (name "TMM-105-01-X-D-SM")(type "KiCad")(uri "${KIPRJMOD}/libraries/TMM-105-01-X-D-SM")(options "")(descr ""))
+  (lib (name "KiKit")(type "KiCad")(uri "${KIPRJMOD}/libraries/KiKit")(options "")(descr ""))
 )

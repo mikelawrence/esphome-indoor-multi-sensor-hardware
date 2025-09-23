@@ -1,6 +1,6 @@
 # ESPHome Parking Assistant Enclosure
 
-<img src="meta/ESPHome-Multi-Sensor-Enclosure-Render.png" width="100%">
+<img src="meta/ESPHome-Indoor-Multi-Sensor-Enclosure-Render.png" width="100%">
 
 This 3D printable enclosure is designed to go into a corner. It has a two-piece adjustable angle rear mount. Just change the ```Wall_Angle``` parameter. Both the speaker enclosure and back mount have TPU gaskets. The speaker gasket is to seal the enclosure and prevent vibrations from the speaker causing a buzzing sound. The TPU back mount gasket seals the SEN66 and provides a small amount of pressure to keep the SEN66 from moving.
 

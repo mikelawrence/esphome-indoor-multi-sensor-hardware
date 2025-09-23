@@ -6,9 +6,11 @@
 	(paper "A4")
 	(title_block
 		(title "ESPHome Parking Assistant")
-		(date "2025-04-18")
-		(rev "A")
+		(date "2025-09-23")
+		(rev "B")
 		(company "Mike Lawrence")
+		(comment 1 "Rev A: Fixed Rev - mistakes.")
+		(comment 2 "Rev B: Support for LD2410S/LD2420 and temp sensor for CO sensor.")
 	)
 	(lib_symbols
 		(symbol "Audio:MAX98357A"
@@ -3780,7 +3782,7 @@
 		)
 		(uuid "d325fef3-feb5-449b-9812-a0f6b646a6ea")
 	)
-	(text "Notes\n1. ESP32-S3 Strapping Pins: GPIO0, GPIO3, GPIO45, GPIO46.\n1. MAX98357A DAC when enabled is configured for stereo data mode."
+	(text "Notes\n1. ESP32-S3 Strapping Pins: GPIO0, GPIO3, GPIO45, GPIO46.\n2. MAX98357A DAC when enabled is configured for stereo data mode.\n3. SEN0609_EN and LD24X0_EN are no longer used. In order to maintain\n   backwards compatiblity these pins should not be used."
 		(exclude_from_sim no)
 		(at 25.4 165.1 0)
 		(effects
@@ -4003,10 +4005,6 @@
 	(no_connect
 		(at 58.42 57.15)
 		(uuid "8cd629d1-fc77-49eb-8956-be3294e4a83a")
-	)
-	(no_connect
-		(at 88.9 72.39)
-		(uuid "c24d55bf-d04c-439a-859f-586612495b35")
 	)
 	(no_connect
 		(at 58.42 59.69)
@@ -4641,6 +4639,16 @@
 			(type default)
 		)
 		(uuid "781effea-8d58-4b4c-83af-b4c7701aeb46")
+	)
+	(wire
+		(pts
+			(xy 88.9 72.39) (xy 102.87 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b932f75-2f1b-4679-a27e-45042d833152")
 	)
 	(wire
 		(pts
@@ -5815,7 +5823,7 @@
 		)
 		(uuid "326fc9af-77f0-4849-aa89-4b3ca468385b")
 	)
-	(hierarchical_label "LD24X0_TX"
+	(hierarchical_label "RDRB_TX"
 		(shape input)
 		(at 44.45 69.85 180)
 		(effects
@@ -5848,7 +5856,18 @@
 		)
 		(uuid "493b1095-a0b7-4461-a69f-f61b250ab2de")
 	)
-	(hierarchical_label "LD24X0_RX"
+	(hierarchical_label "RDRA_SIG1"
+		(shape bidirectional)
+		(at 102.87 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4b3a4f68-3b33-40a9-9b97-7a08acf9d204")
+	)
+	(hierarchical_label "RDRB_RX"
 		(shape output)
 		(at 44.45 67.31 180)
 		(effects
@@ -5859,7 +5878,18 @@
 		)
 		(uuid "4faca3f0-a298-43a3-9e96-b1572f3ba032")
 	)
-	(hierarchical_label "SEN0609_OUT"
+	(hierarchical_label "1Wire"
+		(shape bidirectional)
+		(at 102.87 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5045f085-0dd0-4bbc-a959-177f66a198fd")
+	)
+	(hierarchical_label "RDRA_OUT"
 		(shape input)
 		(at 44.45 95.25 180)
 		(effects
@@ -5869,17 +5899,6 @@
 			(justify right)
 		)
 		(uuid "5ec4d89b-9047-4684-848d-171d1f2b66ff")
-	)
-	(hierarchical_label "SEN0609_TX"
-		(shape input)
-		(at 102.87 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7d16ecd4-c20d-4c80-b1ba-45c9d3b25fb3")
 	)
 	(hierarchical_label "LD24X0_EN"
 		(shape output)
@@ -5903,7 +5922,7 @@
 		)
 		(uuid "b1b13b43-4aff-478b-b598-43a9255b80a4")
 	)
-	(hierarchical_label "LD24X0_OUT"
+	(hierarchical_label "RDRB_OUT"
 		(shape input)
 		(at 44.45 72.39 180)
 		(effects
@@ -5913,6 +5932,17 @@
 			(justify right)
 		)
 		(uuid "bea673e0-fab7-481a-85f1-0761a9743b1d")
+	)
+	(hierarchical_label "RDRA_SIG2"
+		(shape bidirectional)
+		(at 102.87 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bf86000d-2ce4-4ef7-af38-af6aa82dcf0c")
 	)
 	(hierarchical_label "SDA2"
 		(shape bidirectional)
@@ -5924,17 +5954,6 @@
 			(justify left)
 		)
 		(uuid "cebcf46f-39b9-4c91-9cdb-18fafcfaa4bc")
-	)
-	(hierarchical_label "SEN0609_RX"
-		(shape output)
-		(at 102.87 69.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "dd8e527a-a82b-434c-9bf4-9ac4c69184c0")
 	)
 	(hierarchical_label "PIR_OUT"
 		(shape input)
@@ -5978,7 +5997,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "004490e6-22f7-4477-8c31-1efa7f9be41b")
-		(property "Reference" "MH3"
+		(property "Reference" "MH4"
 			(at 251.206 127 0)
 			(effects
 				(font
@@ -6027,7 +6046,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "MH3")
+					(reference "MH4")
 					(unit 1)
 				)
 			)
@@ -6042,7 +6061,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "004490e6-22f7-4477-8c31-1efa7f9be41c")
-		(property "Reference" "MH4"
+		(property "Reference" "MH3"
 			(at 251.206 133.35 0)
 			(effects
 				(font
@@ -6091,7 +6110,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "MH4")
+					(reference "MH3")
 					(unit 1)
 				)
 			)
@@ -6496,7 +6515,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "22e3a077-0205-4eb2-a81d-c6de6aa2e4ab")
-		(property "Reference" "U5"
+		(property "Reference" "U3"
 			(at 203.454 43.18 0)
 			(effects
 				(font
@@ -6613,7 +6632,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "U5")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -6628,7 +6647,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "27b108ed-f8d1-4a35-8b24-7a39743ff8ae")
-		(property "Reference" "R14"
+		(property "Reference" "R12"
 			(at 157.48 127 90)
 			(effects
 				(font
@@ -6698,7 +6717,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "R14")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -6713,7 +6732,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2c82287d-8565-4ab0-8c0b-dce5ee986069")
-		(property "Reference" "C42"
+		(property "Reference" "C38"
 			(at 215.9 109.474 90)
 			(effects
 				(font
@@ -6791,7 +6810,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "C42")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -6806,7 +6825,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "31c7a545-5786-4f28-8340-b558d842cb38")
-		(property "Reference" "JP3"
+		(property "Reference" "JP1"
 			(at 173.99 67.31 0)
 			(effects
 				(font
@@ -6901,7 +6920,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "JP3")
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -7047,7 +7066,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b8e68e6-86b7-4cc8-953a-e2426e9b6b77")
-		(property "Reference" "R13"
+		(property "Reference" "R11"
 			(at 191.77 77.47 90)
 			(effects
 				(font
@@ -7117,7 +7136,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "R13")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -7293,7 +7312,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "47c299ae-8d49-47d6-a1f4-11517bdc995e")
-		(property "Reference" "R9"
+		(property "Reference" "R7"
 			(at 110.236 135.128 0)
 			(effects
 				(font
@@ -7365,7 +7384,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "R9")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -7380,7 +7399,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4eeffedb-4a00-4456-bc5a-e42ffc80d36d")
-		(property "Reference" "U3"
+		(property "Reference" "U1"
 			(at 41.402 135.89 0)
 			(effects
 				(font
@@ -7460,7 +7479,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "U3")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -7694,7 +7713,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6b79c00f-38d5-4021-87f3-aaa8001a9448")
-		(property "Reference" "R8"
+		(property "Reference" "R6"
 			(at 100.076 135.128 0)
 			(effects
 				(font
@@ -7766,7 +7785,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "R8")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -7976,7 +7995,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8023affb-83ab-457e-9922-549dfa54523d")
-		(property "Reference" "C25"
+		(property "Reference" "C21"
 			(at 169.672 134.366 90)
 			(effects
 				(font
@@ -8048,7 +8067,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "C25")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -8064,7 +8083,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "85b5588a-3e53-4210-be7c-ae8c77fc8fd0")
-		(property "Reference" "R5"
+		(property "Reference" "R3"
 			(at 191.77 54.61 90)
 			(effects
 				(font
@@ -8134,7 +8153,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "R5")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -8280,7 +8299,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8ece5d35-fac2-4385-b2cd-1b101b1810f6")
-		(property "Reference" "C12"
+		(property "Reference" "C8"
 			(at 80.01 33.274 90)
 			(effects
 				(font
@@ -8350,7 +8369,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "C12")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -8366,7 +8385,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "92077de1-e465-49df-b697-38d9abc92240")
-		(property "Reference" "C11"
+		(property "Reference" "C7"
 			(at 235.966 61.214 0)
 			(effects
 				(font
@@ -8446,7 +8465,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "C11")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -8461,7 +8480,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9d7dceed-2511-4a39-a2e4-827a76f16a98")
-		(property "Reference" "R15"
+		(property "Reference" "R13"
 			(at 157.48 106.68 90)
 			(effects
 				(font
@@ -8531,7 +8550,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "R15")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -8546,7 +8565,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a8006796-9f37-42de-ad70-19de264d7872")
-		(property "Reference" "C10"
+		(property "Reference" "C6"
 			(at 67.31 33.528 90)
 			(effects
 				(font
@@ -8616,7 +8635,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "C10")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -8784,7 +8803,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bc61f26f-a257-456b-9e3b-fe9da9d59e57")
-		(property "Reference" "C26"
+		(property "Reference" "C22"
 			(at 169.672 114.046 90)
 			(effects
 				(font
@@ -8856,7 +8875,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "C26")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -8936,7 +8955,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c0912bd7-9d07-4120-9c61-c14d76fe21bb")
-		(property "Reference" "U8"
+		(property "Reference" "U6"
 			(at 60.96 45.974 0)
 			(effects
 				(font
@@ -9125,7 +9144,7 @@
 		(instances
 			(project ""
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "U8")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -9205,7 +9224,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c4dee797-83b5-419d-a203-74bc52a9628c")
-		(property "Reference" "C8"
+		(property "Reference" "C5"
 			(at 71.12 127.508 90)
 			(effects
 				(font
@@ -9275,7 +9294,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "C8")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -9867,7 +9886,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f023c4a9-be06-4d24-92ee-62c2fe56f43b")
-		(property "Reference" "C17"
+		(property "Reference" "C13"
 			(at 231.14 54.864 0)
 			(effects
 				(font
@@ -9947,7 +9966,7 @@
 		(instances
 			(project "ESPHome-Indoor-Multi-Sensor"
 				(path "/e74956a0-c576-42e7-be96-7ce5c3135988/bd75fc22-91af-4c71-b8b1-dfd5c5fbd52d"
-					(reference "C17")
+					(reference "C13")
 					(unit 1)
 				)
 			)

@@ -1,4 +1,4 @@
-# ESPHome Indoor Multi-Sensor
+# ESPHome Indoor Multi-Sensor Hardware
 
 <p align="center">
   <a href="enclosure/README.md"><img src="enclosure/meta/ESPHome-Multi-Sensor-Enclosure-Render.png" width="32%"></a>
@@ -24,11 +24,11 @@ I settled on the following characteristics:
   - Particulate Matter (PM) 
   - CO₂
   - Volatile Organic Compound (VOC)
-  - Nitrogen Oxide (NOX)
+  - Nitrogen Oxide (NOₓ)
 * Or individual Sensors (Package B)
   - Sensirion SHT4X Temperature and Humidity
   - Sensirion SCD4X CO₂
-  - Sensirion SGP4X VOC and NOX
+  - Sensirion SGP4X VOC and NOₓ
 * Bosch BMP581 Pressure
 * Figaro TGS5141 Carbon Monoxide (CO)
 * AMS TSL2591 Light
@@ -38,7 +38,7 @@ I settled on the following characteristics:
 
 ## Status
 * **Rev -** Has been fabricated and tested. I had JLCPCB fabricate the boards and I self assembled using a Home-Brew reflow oven by [Whizoo Controleo3](https://whizoo.com/). All circuits have been tested and found to be operational. 
-* **Rev A** There was an issue with signal integrity on the I2C bus when communicating with the SEN66. To fix the problem I added stronger pullups and a new and dedicated I2C bus to the SEN66. Thus Rev A was born. I have not fabricated Rev A boards since I still have 6 Rev - boards left but the changes are minor and should be fine. Please let me know if you built Rev A and how it went.
+* **Rev A** There was an issue with signal integrity on the I²C bus when communicating with the SEN66. To fix the problem I added stronger pullups and a new and dedicated I²C bus to the SEN66. Thus Rev A was born. I have not fabricated Rev A boards since I still have 6 Rev - boards left but the changes are minor and should be fine. Please let me know if you built Rev A and how it went.
 
 ## Design Decisions
 ### ESP32 and ESPHome
@@ -51,10 +51,10 @@ This project uses ESP32-S3-WROOM-2-N32R16V which has an enormous 32MB of flash a
 Both the Hi-Link sensors (LS2410B and LD2450) are supported by ESPHome directly but the DFRobot C4001 is not. I wrote an ESPHome External Component available [here](https://github.com/mikelawrence/ESPHome-Components?tab=readme-ov-file#esphome-c4001-external-component). The board has the LD2410 and LD2450 sharing the same physical space but the DFRobot C4001 can exist next to one of the LD sensors. I added circuitry so that you can choose which sensor to operate electrically. However enabling both simultaneously could result in strange behavior. After using the LD2450 for  bit I realized the the "just released" LD2450 ESPHome component has some short comings. Specifically there is no installation angle or flip-x-axis. So I added them in my version of the LD2450 ESPHome component [here] (https://github.com/mikelawrence/ESPHome-Components?tab=readme-ov-file#esphome-ld2450-external-component).
 
 #### Sensor choices
-The [SEN66](https://sensirion.com/products/catalog/SEN66) may be an expensive sensor package but it does it all, Temperature, Humidity, PM, CO₂, VOC and NOX. A tiny fan is primarily used for measuring PM but it also moves air by the temperature and humidity sensors making them fairly responsive. I call this Package A. If you choose not use the SEN66 you can populate the Package B individual sensors ([SHT4X](https://sensirion.com/media/documents/33FD6951/67EB9032/HT_DS_Datasheet_SHT4x_5.pdf), [SCD4X](https://sensirion.com/media/documents/48C4B7FB/67FE0194/CD_DS_SCD4x_Datasheet_D1.pdf) and [SGP4X](https://sensirion.com/media/documents/A056FE9C/61E970C2/Sensirion_Flyer_Gas_Sensors_Web.pdf)) to get Temperature, Humidity, CO₂, VOC and NOX. The only thing missing is PM.
+The [SEN66](https://sensirion.com/products/catalog/SEN66) may be an expensive sensor package but it does it all, Temperature, Humidity, PM, CO₂, VOC and NOₓ. A tiny fan is primarily used for measuring PM but it also moves air by the temperature and humidity sensors making them fairly responsive. I call this Package A. If you choose not use the SEN66 you can populate the Package B individual sensors ([SHT4X](https://sensirion.com/media/documents/33FD6951/67EB9032/HT_DS_Datasheet_SHT4x_5.pdf), [SCD4X](https://sensirion.com/media/documents/48C4B7FB/67FE0194/CD_DS_SCD4x_Datasheet_D1.pdf) and [SGP4X](https://sensirion.com/media/documents/A056FE9C/61E970C2/Sensirion_Flyer_Gas_Sensors_Web.pdf)) to get Temperature, Humidity, CO₂, VOC and NOₓ. The only thing missing is PM.
 
 #### Carbon Monoxide
-For some reason CO sensors are not as common as CO₂ sensors. Most are expensive and have short life spans. The  Figaro TGS5141 is inexpensive and has a 10-year life span but it isn't a nice all-in-one with I2C interface. You have to add a transimpedance amplifier and then digitize the analog signal. I chose to add an ADS1115 16-bit ADC right next to the transimpedance amplifier instead of running analog signal across the board to the questionable ESP32 built in ADC. The ADS1115 also a has true differential Programmable Gain Amplifier on the input. This reduces the CO sensor circuit complexity. This sensor is not going to be very accurate but detection of CO in even low levels is probably a reason for concern. So even if not a safety sensor it can help.
+For some reason CO sensors are not as common as CO₂ sensors. Most are expensive and have short life spans. The  Figaro TGS5141 is inexpensive and has a 10-year life span but it isn't a nice all-in-one with I²C interface. You have to add a transimpedance amplifier and then digitize the analog signal. I chose to add an ADS1115 16-bit ADC right next to the transimpedance amplifier instead of running analog signal across the board to the questionable ESP32 built in ADC. The ADS1115 also a has true differential Programmable Gain Amplifier on the input. This reduces the CO sensor circuit complexity. This sensor is not going to be very accurate but detection of CO in even low levels is probably a reason for concern. So even if not a safety sensor it can help.
 
 I verified the CO circuit using CO Bump Gas. It doesn't calibrate, but it will prove that the sensor responds to the presence of CO. I used a small upside down container on my outside bench with the sensor I wanted to test inside. Squirting some bump gas inside with the thin straw showed that 4 out of 5 sensors responded to the gas. The 5'th that didn't respond had a solder bridge between two pins on the transimpedance amplifier. A quick removal of the solder bridge fixed the non-functioning sensor.
 
@@ -83,4 +83,4 @@ I'm not using USB-C Power Delivery but I am expecting 5V @ 3A which is readily a
 More information is in the enclosure [README](enclosure/README.md) file.
 
 ## Configuration
-Click [here](https://mikelawrence.github.io/esphome-indoor-multi-sensor-config/) to go to the installation and configuration site.
+Click [here](https://mikelawrence.github.io/esphome-indoor-multi-sensor-config/) to go to the installation and configuration repository.

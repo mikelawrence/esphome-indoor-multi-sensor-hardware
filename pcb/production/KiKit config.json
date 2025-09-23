@@ -1,0 +1,27 @@
+{
+    "layout": {
+        "hspace": "2mm",
+        "vspace": "2mm",
+        "cols": "2"
+    },
+    "source": {
+        "stack": "4layer"
+    },
+    "tabs": {
+        "type": "annotation",
+        "fillet": "0.5mm"
+    },
+    "cuts": {
+        "type": "vcuts",
+        "layer": "Edge.Cuts"
+    },
+    "framing": {
+        "type": "tightframe",
+        "width": "6mm",
+        "fillet": "0.5mm"
+    },
+    "post": {
+        "millradius": "0.5mm",
+        "refillzones": "True"
+    }
+}

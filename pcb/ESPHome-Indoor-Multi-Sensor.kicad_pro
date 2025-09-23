@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.3,
-          "height": 0.45,
-          "width": 0.45
+          "drill": 0.75,
+          "height": 1.5,
+          "width": 1.05
         },
         "silk_line_width": 0.2,
         "silk_text_italic": false,
@@ -60,15 +60,11 @@
       ],
       "drc_exclusions": [
         [
+          "courtyards_overlap|113585000|83175000|27ebcb16-1ef0-425e-9cdf-b79ad8228201|3ed35d77-f67c-42fc-bd7f-841293f60079",
+          ""
+        ],
+        [
           "courtyards_overlap|134464594|69045000|3d112958-a4c5-454d-9e82-ede3b69483bc|c766818b-98de-4084-92c5-e9a9720ca460",
-          ""
-        ],
-        [
-          "courtyards_overlap|135055000|35455000|27ebcb16-1ef0-425e-9cdf-b79ad8228201|da0dcf13-da23-46ca-b254-495667603e21",
-          ""
-        ],
-        [
-          "courtyards_overlap|138413569|71295000|3d112958-a4c5-454d-9e82-ede3b69483bc|b78a7713-0165-49d1-84e6-2887e7a1f351",
           ""
         ]
       ],
@@ -141,7 +137,7 @@
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.4,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.1,
+        "min_hole_clearance": 0.15,
         "min_hole_to_hole": 0.2,
         "min_microvia_diameter": 0.45,
         "min_microvia_drill": 0.25,
@@ -500,6 +496,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
