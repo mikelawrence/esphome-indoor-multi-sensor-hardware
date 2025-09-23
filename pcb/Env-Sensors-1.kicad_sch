@@ -1872,7 +1872,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 69.85) (xy 146.05 85.09)
+			(xy 147.32 69.85) (xy 147.32 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2192,7 +2192,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 85.09) (xy 146.05 85.09)
+			(xy 139.7 85.09) (xy 147.32 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2282,7 +2282,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 62.23) (xy 146.05 52.07)
+			(xy 147.32 62.23) (xy 147.32 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2512,7 +2512,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 52.07) (xy 132.08 52.07)
+			(xy 147.32 52.07) (xy 132.08 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2819,7 +2819,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 146.05 66.04 0)
+		(at 147.32 66.04 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2828,7 +2828,7 @@
 		(dnp no)
 		(uuid "0deb392d-7023-422a-b9f4-d8ee502ed8e5")
 		(property "Reference" "C26"
-			(at 148.59 65.024 0)
+			(at 149.86 65.024 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2837,7 +2837,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 148.59 67.056 0)
+			(at 149.86 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2846,7 +2846,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 145.0848 69.85 0)
+			(at 146.3548 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2855,7 +2855,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 66.04 0)
+			(at 147.32 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2864,7 +2864,7 @@
 			)
 		)
 		(property "Description" "Capacitor, 1uF, MLCC, 25V, X5R, 10%, 0402"
-			(at 146.05 66.04 0)
+			(at 147.32 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2873,7 +2873,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung"
-			(at 146.05 66.04 0)
+			(at 147.32 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2882,7 +2882,7 @@
 			)
 		)
 		(property "Part Number" "CL05A105KA5NQNC"
-			(at 146.05 66.04 0)
+			(at 147.32 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
