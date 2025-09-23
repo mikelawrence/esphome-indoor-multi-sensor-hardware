@@ -1,7 +1,7 @@
 # ESPHome Indoor Multi-Sensor Hardware
 
 <p align="center">
-  <a href="enclosure/README.md"><img src="enclosure/meta/ESPHome-Multi-Sensor-Enclosure-Render.png" width="32%"></a>
+  <a href="enclosure/README.md"><img src="enclosure/meta/ESPHome-Indoor-Multi-Sensor-Enclosure-Render.png" width="32%"></a>
   <a href="pcb/README.md"><img src="pcb/meta/ESPHome-Indoor-Multi-Sensor-Front-Render.png" width="32%"></a>
   <a href="pcb/README.md"><img src="pcb/meta/ESPHome-Indoor-Multi-Sensor-Back-Render.png" width="32%"></a>
 </p>
