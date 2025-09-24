@@ -39,9 +39,9 @@ I settled on the following characteristics:
 * INA228 Power and Energy Monitor
 
 ## Status
-* **Rev -** Has been fabricated and tested. I had JLCPCB fabricate the boards and I self assembled using a Home-Brew reflow oven by [Whizoo Controleo3](https://whizoo.com/). All circuits have been tested and found to be operational. 
-* **Rev A** There was an issue with signal integrity on the I²C bus when communicating with the SEN66. To fix the problem I added stronger pullups and a new and dedicated I²C bus to the SEN66. Thus Rev A was born. This revision was never fabricated. But all my Rev - boards have been modified to Rev A.
-* **Rev B** Added support for the LD2410S and LD2420 Radars. Added CO temperature sensor. Added INA228 powr monitors for 3.3V and 3.3VA. Removed Radar power control. Board is being fabricated now by JLCPCB.
+* **Rev -:** Has been fabricated and tested. I had JLCPCB fabricate the boards and I self assembled using a Home-Brew reflow oven by [Whizoo Controleo3](https://whizoo.com/). All circuits have been tested and found to be operational. 
+* **Rev A:** There was an issue with signal integrity on the I²C bus when communicating with the SEN66. To fix the problem I added stronger pullups and a new and dedicated I²C bus to the SEN66. Thus Rev A was born. This revision was never fabricated. But all my Rev - boards have been modified to Rev A.
+* **Rev B:** Added support for the LD2410S and LD2420 Radars. Added CO temperature sensor. Added INA228 powr monitors for 3.3V and 3.3VA. Removed Radar power control. Board is being fabricated now by JLCPCB.
 
 ## Design Decisions
 ### ESP32 and ESPHome
