@@ -3,10 +3,10 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "e74956a0-c576-42e7-be96-7ce5c3135988")
-	(paper "A4")
+	(paper "A")
 	(title_block
-		(title "ESPHome Parking Assistant")
-		(date "2025-09-23")
+		(title "ESPHome Indoor Multi-Sensor")
+		(date "2025-09-24")
 		(rev "B")
 		(company "Mike Lawrence")
 	)
@@ -2744,9 +2744,9 @@
 		)
 		(uuid "696a76bc-879c-4f1c-86b3-eebe7ae07e3d")
 	)
-	(text "Power\nMeasurement"
+	(text "USB-C Power\nMeasurement"
 		(exclude_from_sim no)
-		(at 156.972 43.434 0)
+		(at 159.512 25.908 0)
 		(effects
 			(font
 				(size 1.905 1.905)
@@ -3032,6 +3032,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 132.08) (xy 101.6 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ffffac2-8306-42ad-b4c7-442112f8eeb8")
+	)
+	(wire
+		(pts
 			(xy 187.96 76.2) (xy 187.96 102.87)
 		)
 		(stroke
@@ -3279,6 +3289,16 @@
 			(type default)
 		)
 		(uuid "5154b405-4fe6-4330-b0b1-9e548093a2dd")
+	)
+	(wire
+		(pts
+			(xy 67.31 134.62) (xy 101.6 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53c25e5b-3bd7-4bb7-8145-04445944c7d5")
 	)
 	(wire
 		(pts
@@ -3809,7 +3829,7 @@
 			)
 		)
 		(column_widths 25.4 25.4)
-		(row_heights 3.81 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54)
+		(row_heights 3.81 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54)
 		(cells
 			(table_cell "Device"
 				(exclude_from_sim no)
@@ -3882,7 +3902,7 @@
 				)
 				(uuid "72ea143e-6ff0-4337-87b2-c98721bfbd25")
 			)
-			(table_cell "INA228"
+			(table_cell "INA228 USB-C"
 				(exclude_from_sim no)
 				(at 203.2 31.75 0)
 				(size 25.4 2.54)
@@ -3915,9 +3935,75 @@
 				)
 				(uuid "9493e22e-9502-4e3e-b85d-16919ecc71cd")
 			)
-			(table_cell "SHT45"
+			(table_cell "INA228 +3.3V"
 				(exclude_from_sim no)
 				(at 203.2 34.29 0)
+				(size 25.4 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "76dd08d1-7697-44ba-95ed-ef5c32558021")
+			)
+			(table_cell "0x42"
+				(exclude_from_sim no)
+				(at 228.6 34.29 0)
+				(size 25.4 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "7e202d77-37ac-446b-bd22-f2870498d378")
+			)
+			(table_cell "INA228 +3.3VA"
+				(exclude_from_sim no)
+				(at 203.2 36.83 0)
+				(size 25.4 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "2e7bcae2-8c7d-480f-b0dc-85290d09dbb6")
+			)
+			(table_cell "0x43"
+				(exclude_from_sim no)
+				(at 228.6 36.83 0)
+				(size 25.4 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(uuid "da854697-3139-4b09-9eed-d5b08b6e41a3")
+			)
+			(table_cell "SHT45"
+				(exclude_from_sim no)
+				(at 203.2 39.37 0)
 				(size 25.4 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -3934,7 +4020,7 @@
 			)
 			(table_cell "0x44"
 				(exclude_from_sim no)
-				(at 228.6 34.29 0)
+				(at 228.6 39.37 0)
 				(size 25.4 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -3950,7 +4036,7 @@
 			)
 			(table_cell "BMP581"
 				(exclude_from_sim no)
-				(at 203.2 36.83 0)
+				(at 203.2 41.91 0)
 				(size 25.4 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -3967,7 +4053,7 @@
 			)
 			(table_cell "0x47"
 				(exclude_from_sim no)
-				(at 228.6 36.83 0)
+				(at 228.6 41.91 0)
 				(size 25.4 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -3983,7 +4069,7 @@
 			)
 			(table_cell "CO ADC"
 				(exclude_from_sim no)
-				(at 203.2 39.37 0)
+				(at 203.2 44.45 0)
 				(size 25.4 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4000,7 +4086,7 @@
 			)
 			(table_cell "0x48"
 				(exclude_from_sim no)
-				(at 228.6 39.37 0)
+				(at 228.6 44.45 0)
 				(size 25.4 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4016,7 +4102,7 @@
 			)
 			(table_cell "SGP41"
 				(exclude_from_sim no)
-				(at 203.2 41.91 0)
+				(at 203.2 46.99 0)
 				(size 25.4 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4033,7 +4119,7 @@
 			)
 			(table_cell "0x59"
 				(exclude_from_sim no)
-				(at 228.6 41.91 0)
+				(at 228.6 46.99 0)
 				(size 25.4 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4049,7 +4135,7 @@
 			)
 			(table_cell "SCD41"
 				(exclude_from_sim no)
-				(at 203.2 44.45 0)
+				(at 203.2 49.53 0)
 				(size 25.4 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4066,7 +4152,7 @@
 			)
 			(table_cell "0x62"
 				(exclude_from_sim no)
-				(at 228.6 44.45 0)
+				(at 228.6 49.53 0)
 				(size 25.4 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4082,7 +4168,7 @@
 			)
 			(table_cell "SEN66"
 				(exclude_from_sim no)
-				(at 203.2 46.99 0)
+				(at 203.2 52.07 0)
 				(size 25.4 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4099,7 +4185,7 @@
 			)
 			(table_cell "0x6B"
 				(exclude_from_sim no)
-				(at 228.6 46.99 0)
+				(at 228.6 52.07 0)
 				(size 25.4 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5769,7 +5855,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Current Sense Resistor, 150mΩ, 500mW, 1%, 1210"
+		(property "Description" "Current Sense Resistor, 150mΩ, 250mW, 1%, 75ppm, 0805"
 			(at 134.62 31.75 0)
 			(effects
 				(font
@@ -5778,7 +5864,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Panasonic"
+		(property "Manufacturer" "Vishay"
 			(at 134.62 31.75 0)
 			(effects
 				(font
@@ -5787,7 +5873,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "ERJ-14BSFR15U"
+		(property "Part Number" "WSL0805R1500FEA18"
 			(at 134.62 31.75 0)
 			(effects
 				(font
@@ -6028,6 +6114,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "SCL1" input
+			(at 67.31 134.62 0)
+			(uuid "34959ed2-456d-4531-95f4-f5558b6c1a2f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDA1" bidirectional
+			(at 67.31 132.08 0)
+			(uuid "7c9a9e11-51c3-4e86-8312-3a782a0934f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -6386,7 +6492,7 @@
 				(justify right)
 			)
 		)
-		(pin "LD24X0_EN" output
+		(pin "SDA1" bidirectional
 			(at 101.6 132.08 180)
 			(uuid "b70a7ac6-085f-4595-bc80-000334417d79")
 			(effects
@@ -6396,8 +6502,8 @@
 				(justify left)
 			)
 		)
-		(pin "SEN0609_EN" output
-			(at 101.6 129.54 180)
+		(pin "SCL1" output
+			(at 101.6 134.62 180)
 			(uuid "d6d429e3-25ec-4eba-8aff-97d3e310b5c9")
 			(effects
 				(font

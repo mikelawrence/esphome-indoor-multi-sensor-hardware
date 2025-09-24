@@ -3,10 +3,10 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "48aeecb4-6dd9-4361-b9f5-a75f25e58bf0")
-	(paper "A4")
+	(paper "A")
 	(title_block
-		(title "ESPHome Parking Assistant")
-		(date "2025-09-23")
+		(title "ESPHome Indoor Multi-Sensor")
+		(date "2025-09-24")
 		(rev "B")
 		(company "Mike Lawrence")
 	)
@@ -2357,9 +2357,9 @@
 		)
 		(uuid "2f149599-23c8-4aa0-832e-761bd09c0f42")
 	)
-	(text "CO Sensor"
+	(text "CO Temperature Sensor"
 		(exclude_from_sim no)
-		(at 178.816 27.432 0)
+		(at 211.328 87.884 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -2368,7 +2368,7 @@
 			)
 			(justify top)
 		)
-		(uuid "65f247d0-6d53-4e6b-8942-8d425380e2f5")
+		(uuid "40652fc5-2618-4f47-b572-4f59fb435512")
 	)
 	(text "I2C Addr = 0x29"
 		(exclude_from_sim no)
@@ -2396,7 +2396,7 @@
 	)
 	(text "Notes\n1. Accuracy of CO_V_{REF} not critical. \n   Needs to be around 2V to turn off Q1.\n2. ADC range 0.512V.\n3. Max 1000PPM.\n4. Gain = 0.512V / (3.2nA x 1.225 x 1000PPM) = 133.333k"
 		(exclude_from_sim no)
-		(at 25.4 165.1 0)
+		(at 20.32 171.196 0)
 		(effects
 			(font
 				(size 1.905 1.905)
