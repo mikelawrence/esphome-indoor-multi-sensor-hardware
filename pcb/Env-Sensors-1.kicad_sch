@@ -9,6 +9,7 @@
 		(date "2025-09-24")
 		(rev "B")
 		(company "Mike Lawrence")
+		(comment 1 "Rev A: Add I2C2 bus for SEN66")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic_MountingPin:Conn_01x06_MountingPin"

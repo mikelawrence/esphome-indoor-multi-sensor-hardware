@@ -9,6 +9,7 @@
 		(date "2025-09-24")
 		(rev "B")
 		(company "Mike Lawrence")
+		(comment 1 "Rev B: Add DS18S20 temp sensor for CO calibration")
 	)
 	(lib_symbols
 		(symbol "Analog_ADC:ADS1115IDGS"

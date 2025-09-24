@@ -9,8 +9,8 @@
 		(date "2025-09-24")
 		(rev "B")
 		(company "Mike Lawrence")
-		(comment 1 "Rev A: Fixed Rev - mistakes.")
-		(comment 2 "Rev B: Support for LD2410S/LD2420 and temp for CO sensor.")
+		(comment 1 "Rev A: Add I2C2 bus for SEN66")
+		(comment 2 "Rev B: Remove speaker gain jumper")
 	)
 	(lib_symbols
 		(symbol "Audio:MAX98357A"

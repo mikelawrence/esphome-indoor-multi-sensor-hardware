@@ -9,6 +9,7 @@
 		(date "2025-09-24")
 		(rev "B")
 		(company "Mike Lawrence")
+		(comment 1 "Rev B: Add LD2410S and LD2420 support, J3 voltage now 3.3V down from 5V")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x05"
