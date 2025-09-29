@@ -5412,7 +5412,7 @@
 		)
 		(uuid "4faca3f0-a298-43a3-9e96-b1572f3ba032")
 	)
-	(hierarchical_label "1Wire"
+	(hierarchical_label "1WIRE"
 		(shape bidirectional)
 		(at 101.6 73.66 0)
 		(effects

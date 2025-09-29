@@ -4406,7 +4406,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "INA228"
+		(property "Value" "INA238"
 			(at 201.93 150.368 0)
 			(effects
 				(font
@@ -4433,7 +4433,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IC, High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-85V) with I2C, SMBus-, and PMBus-Compatible Interface, VSSOP-10"
+		(property "Description" "IC, 85V, 16-Bit, High-Precision Power Monitor With I2C Interface, VSSOP-10"
 			(at 204.47 138.43 0)
 			(effects
 				(font
@@ -4451,7 +4451,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "INA228AIDGSR"
+		(property "Part Number" "INA238AIDGSR"
 			(at 204.47 138.43 0)
 			(effects
 				(font
@@ -5416,7 +5416,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "INA228"
+		(property "Value" "INA238"
 			(at 201.93 75.438 0)
 			(effects
 				(font
@@ -5443,7 +5443,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IC, High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-85V) with I2C, SMBus-, and PMBus-Compatible Interface, VSSOP-10"
+		(property "Description" "IC, 85V, 16-Bit, High-Precision Power Monitor With I2C Interface, VSSOP-10"
 			(at 204.47 63.5 0)
 			(effects
 				(font
@@ -5461,7 +5461,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "INA228AIDGSR"
+		(property "Part Number" "INA238AIDGSR"
 			(at 204.47 63.5 0)
 			(effects
 				(font

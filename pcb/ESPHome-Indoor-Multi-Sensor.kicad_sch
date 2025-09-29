@@ -2746,7 +2746,7 @@
 		)
 		(uuid "696a76bc-879c-4f1c-86b3-eebe7ae07e3d")
 	)
-	(text "USB-C Power\nMeasurement"
+	(text "USB-C Energy\nMeasurement"
 		(exclude_from_sim no)
 		(at 159.512 25.908 0)
 		(effects
@@ -3937,7 +3937,7 @@
 				)
 				(uuid "9493e22e-9502-4e3e-b85d-16919ecc71cd")
 			)
-			(table_cell "INA228 +3.3V"
+			(table_cell "INA238 +3.3V"
 				(exclude_from_sim no)
 				(at 203.2 34.29 0)
 				(size 25.4 2.54)
@@ -3970,7 +3970,7 @@
 				)
 				(uuid "7e202d77-37ac-446b-bd22-f2870498d378")
 			)
-			(table_cell "INA228 +3.3VA"
+			(table_cell "INA238 +3.3VA"
 				(exclude_from_sim no)
 				(at 203.2 36.83 0)
 				(size 25.4 2.54)
@@ -5596,7 +5596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IC, High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-85V) with I2C, SMBus-, and PMBus-Compatible Interface, VSSOP-10"
+		(property "Description" "IC, 85-V, 20-Bit, Ultra-Precise Power-Energy-Charge Monitor With I2C Interface, VSSOP-10"
 			(at 160.02 76.2 0)
 			(effects
 				(font

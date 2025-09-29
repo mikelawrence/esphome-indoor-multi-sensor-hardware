@@ -3589,7 +3589,7 @@
 		)
 		(uuid "7d84a6a0-18b1-42b4-8ed6-93e0ecd86f32")
 	)
-	(hierarchical_label "1Wire"
+	(hierarchical_label "1WIRE"
 		(shape bidirectional)
 		(at 233.68 107.95 0)
 		(effects
