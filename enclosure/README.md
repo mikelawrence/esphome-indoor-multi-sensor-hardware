@@ -27,9 +27,9 @@ Independent `STEP` files are also available in the `3d-printing folder`.
 
 This 3D printable enclosure is designed to mount on a US Wallplate. There are four versions: Left Facing with SEN66, Right Facing with SEN66, Left Facing, and Right Facing. This is similar to the Corner mount without the angle adjustment. 
 
-The Angle Wallplate FUsion design file is [here](https://github.com/mikelawrence/ESPHome-Indoor-Multi-Sensor/raw/refs/heads/main/enclosure/ESPHome-Multi-Sensor-Angle-Wallplate-Enclosure.f3z).
+The Angle Wallplate FUsion design file is [here](https://github.com/mikelawrence/esphome-indoor-multi-sensor-hardware/raw/refs/heads/main/enclosure/ESPHome-Multi-Sensor-Angle-Wallplate-Enclosure.f3z).
 
-[Here](https://github.com/mikelawrence/ESPHome-Indoor-Multi-Sensor/raw/refs/heads/main/enclosure/3d-printing/Corner-Mount/ESPHome-Indoor-Multi-Sensor-Angle-Wallplate-Bambu-Studio.3mf) is a BambuLab file with all the parts ready for you to print.
+[Here](https://github.com/mikelawrence/esphome-indoor-multi-sensor-hardware/raw/refs/heads/main/enclosure/3d-printing/Angle-Wallplate/ESPHome-Indoor-Multi-Sensor-Angle-Wallplate-Bambu-Studio.3mf) is a BambuLab file with all the parts ready for you to print.
 
 Independent `STEP` files are also available in the `3d-printing folder`.
 
