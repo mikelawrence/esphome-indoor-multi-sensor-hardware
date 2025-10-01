@@ -1,7 +1,7 @@
 # ESPHome Indoor Multi-Sensor Hardware
 
 <p align="center">
-  <a href="enclosure/README.md"><img src="enclosure/meta/ESPHome-Indoor-Multi-Sensor-Enclosure-Render.png" width="32%"></a>
+  <a href="enclosure/README.md"><img src="enclosure/meta/ESPHome-Indoor-Multi-Sensor-Corner-Mount-Render.png" width="32%"></a>
   <a href="pcb/README.md"><img src="pcb/meta/ESPHome-Indoor-Multi-Sensor-Front-Render.png" width="32%"></a>
   <a href="pcb/README.md"><img src="pcb/meta/ESPHome-Indoor-Multi-Sensor-Back-Render.png" width="32%"></a>
 </p>
@@ -82,7 +82,7 @@ The board does not use USB-C Power Delivery but I am expecting 5V @ 3A which is 
 
 ## Enclosure
 <p align="center">
-  <a href="enclosure/README.md"><img src="enclosure/meta/ESPHome-Indoor-Multi-Sensor-Enclosure-Render.png" width="70%"></a>
+  <a href="enclosure/README.md"><img src="enclosure/meta/ESPHome-Indoor-Multi-Sensor-Angle-Wallplate-Mount-Render.png" width="70%"></a>
 </p>
 
 More information is in the enclosure [README](enclosure/README.md) file.
