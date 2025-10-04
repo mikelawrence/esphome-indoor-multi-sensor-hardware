@@ -19,7 +19,7 @@ When you use the SEN66 from Sensirion you don't need to install discrete sensor 
 
 ## Bill of Materials
 <p align="center">
-    <a href="https://htmlpreview.github.io/?https://github.com/mikelawrence/ESPHome-Indoor-Multi-Sensor/blob/main/pcb/interactive-bom/index.html"><img src="meta/ESPHome-Indoor-Multi-Sensor-Interactive-BOM.png" width="70%"></a> <br />
+    <a href="https://htmlpreview.github.io/?https://github.com/mikelawrence/esphome-indoor-multi-sensor-hardware/blob/main/pcb/interactive-bom/index.html"><img src="meta/ESPHome-Indoor-Multi-Sensor-Interactive-BOM.png" width="70%"></a> <br />
     Interactive BOM
 </p>
 
