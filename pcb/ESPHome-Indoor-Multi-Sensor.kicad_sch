@@ -4213,7 +4213,7 @@
 		)
 		(uuid "1a71f5a7-1c6e-430d-b9e6-d6cfbb774e2b")
 	)
-	(label "1Wire"
+	(label "1WIRE"
 		(at 146.05 125.73 0)
 		(effects
 			(font
@@ -6200,7 +6200,7 @@
 				(justify left)
 			)
 		)
-		(pin "1Wire" bidirectional
+		(pin "1WIRE" bidirectional
 			(at 203.2 107.95 180)
 			(uuid "c821cfa3-8102-4c1e-9d2f-ab4545ecca6f")
 			(effects
@@ -6514,7 +6514,7 @@
 				(justify left)
 			)
 		)
-		(pin "1Wire" bidirectional
+		(pin "1WIRE" bidirectional
 			(at 139.7 125.73 0)
 			(uuid "3a524c01-d387-4d20-b294-e52d1250259a")
 			(effects
